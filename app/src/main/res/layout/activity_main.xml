@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purple_200"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/newlayout"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/sensor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="PEDESTRIAN DEAD RECKONING"
+        android:textAlignment="center"
+        android:textColor="@color/purple_700"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="130dp"
+        android:text="ACCELEROMETER"
+        android:textAlignment="gravity"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:translationX="50dp" />
+
+    <ToggleButton
+        android:id="@+id/toggleButton1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:background="@color/teal_200"
+        android:text="ToggleButton"
+        android:textColor="@color/purple_700"
+        android:textStyle="bold"
+        android:translationX="250dp" />
+
+    <!--TextView
+        android:id="@+id/acc1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:text="0"
+        android:textColor="@color/purple_700"
+        android:translationX="50dp" /-->
+
+    <!--TextView
+        android:id="@+id/acc2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:text="0"
+        android:textColor="@color/purple_700"
+        android:translationX="150dp" /-->
+
+    <!--TextView
+        android:id="@+id/acc3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:text="0"
+        android:textColor="@color/purple_700"
+        android:translationX="250dp" /-->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="190dp"
+        android:text="STRIDE LENGTH "
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:translationX="50dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="300dp"
+        android:text="GET DIRECTIONS "
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:translationX="50dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="240dp"
+        android:text="TOTAL DISTANCE"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:translationX="50dp" />
+
+    <TextView
+        android:id="@+id/dist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="240dp"
+        android:hint="distance in 'm'"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:translationX="250dp" />
+
+
+    <com.mikhaellopez.circularprogressbar.CircularProgressBar
+        android:id="@+id/circularProgressBar"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:layout_marginTop="380dp"
+        android:translationX="10dp"
+        app:cpb_background_progressbar_color="#F44336"
+        app:cpb_background_progressbar_width="15dp"
+        app:cpb_progress_max="40"
+        app:cpb_progressbar_color="#FFEB3B"
+        app:cpb_progressbar_width="15dp"
+        app:cpb_round_border="true" />
+
+    <TextView
+        android:id="@+id/stepsText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="430dp"
+        android:text="0"
+        android:textColor="@color/black"
+        android:textSize="50dp"
+        android:textStyle="bold"
+        android:translationX="70dp" />
+
+    <TextView
+        android:id="@+id/stride"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="190dp"
+        android:hint="stride length"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:translationX="250dp" />
+
+    <EditText
+        android:id="@+id/height"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:hint="Enter your height "
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        android:translationX="50dp" />
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="submit"
+        android:translationX="250dp" />
+
+    <ToggleButton
+        android:id="@+id/toggleButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="290dp"
+        android:background="@color/teal_200"
+        android:text="ToggleButton"
+        android:textColor="@color/purple_700"
+        android:textStyle="bold"
+        android:translationX="250dp" />
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="210dp"
+        android:layout_height="210dp"
+        android:layout_marginTop="360dp"
+        android:src="@drawable/compass1"
+        android:translationX="185dp"
+        tools:srcCompat="@drawable/compass1" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:text="Scan Wifi"
+        android:layout_marginTop="600dp"
+        android:background="@color/teal_200"
+        android:id="@+id/wifiscanbtn"/>
+
+
+</RelativeLayout>

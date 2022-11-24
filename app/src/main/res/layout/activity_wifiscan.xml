@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".wifiscan">
+
+    <ListView
+        android:id="@+id/wifilist"
+        android:layout_width="370dp"
+        android:layout_height="20dp"
+        android:layout_weight="0.97" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/wifibtn"
+        android:layout_gravity="bottom"
+        android:layout_margin="15dp"
+        android:text="Scan Wifi"/>
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your room no. here"
+        android:id="@+id/addroom"
+        android:layout_margin="15dp"
+        android:translationX="00dp"
+        android:textSize="16dp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/addwifi"
+        android:layout_gravity="bottom"
+        android:layout_margin="15dp"
+        android:text="Add Room or Wifi"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/findloc"
+        android:layout_gravity="bottom"
+        android:layout_margin="15dp"
+        android:text="Find location"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Your room details"
+        android:id="@+id/findroom"
+        android:layout_margin="15dp"
+        android:translationX="00dp"
+        android:textSize="18dp"/>
+
+</LinearLayout>
